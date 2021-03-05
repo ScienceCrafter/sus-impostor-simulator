@@ -1,0 +1,41 @@
+<!--
+  Why did i make this???
+//-->
+
+<html>
+  <head>
+    <title>sus impostor simulator (v0.0)</title>
+    <style>
+      table, tr, td {
+        border-style: solid;
+        border-collapse: collapse;
+      }
+      td {
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+    <script type="text/javascript" src="gameplay.js"></script>
+  </head>
+  <body>
+    <div id="difficulty_select">
+      <p>Select your difficulty:</p>
+      <button onclick="startGame(0)">little child</button><p id="highscore_0" style="display:inline"></p><br>
+      <button onclick="startGame(1)">crewmate</button><p id="highscore_1" style="display:inline"></p><br>
+      <button onclick="startGame(2)">suspicious impostor</button><p id="highscore_2" style="display:inline"></p><br>
+      <button onclick="startGame(3)">pain</button><p id="highscore_3" style="display:inline"></p><br>
+      <button onclick="startGame(4)">unlocking android phone</button><p id="highscore_4" style="display:inline"></p>
+    </div>
+    <h1 id="score" style="display:none">Impostors Caught: 0</h1>
+    <div id="main" style="display:none">
+      <table id="board"></table>
+      <p id="speed">0 - 0<br>0.0/s</p>
+    </div>
+    <img id="sus" src="sprites/sus.png" height="400px" width="1000px" style="display:none">
+    <div id="new_game" style="display:none">
+      <p>Continue your suffering?</p>
+      <button onclick="newGame()">Amogus</button>
+    </div>
+    <script type="text/javascript" src="start.js"></script>
+  </body>
+</html>
